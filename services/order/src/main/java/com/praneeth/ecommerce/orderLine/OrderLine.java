@@ -5,11 +5,12 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
+@Table(name = "customer_line")
 public class OrderLine {
 
     @Id
